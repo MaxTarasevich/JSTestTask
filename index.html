@@ -9,6 +9,20 @@
     <title>TestTaskJS</title>
 </head>
 <body>
+    <div class="popup-fade">
+        <div class="popup">
+            <!-- <a class="popup-close" href="#">Закрыть</a> -->
+            <p>Ваш чек в Pizza:</p>
+            <ul>
+                <li>Пицца: <span id="modal-pizza"></span></li>
+                <li>Размер: <span  id="modal-size"></span></li>
+                <li>Соус: <span  id="modal-sauce"></span></li>
+                <li>Стоимость суммарно: <span  id="modal-sum"></span></li>
+            </ul>
+            <button class="popup-close">Новый заказ</button>
+        </div>		
+    </div>
+
 <div class="container">
     <h1>Pizza</h1>
 
@@ -17,34 +31,38 @@
             <div class="form_img">
                 <img src="./img/pizza.jpg" alt="pizza">
             </div>
-
+            <div class="form_group">
+                <span>Стоимость вашего заказа:</span>
+                <span id="price"> 0</span>
+            </div>
             <div class="form_group">
                 <label for="pizza">Выберите пиццу:</label>
                 <select name="pizza" id="pizza">
-                    <option value="1">Пепперони</option>
-                    <option value="2">Деревенская</option>
-                    <option value="3">Гавайская</option>
-                    <option value="4">Грибная</option>
+                    <option value="Пепперони" data-price="20">Пепперони</option>
+                    <option value="Деревенская" data-price="22">Деревенская</option>
+                    <option value="Гавайская" data-price="24">Гавайская</option>
+                    <option value="Грибная" data-price="26">Грибная</option>
                 </select>
             </div>
           
             <div class="form_group">
                 <label for="size">Выберите размер:</label>
                 <select name="size" id="size" disabled>
-                    <option value="1">21 см</option>
-                    <option value="2">26 см</option>
-                    <option value="3">31 см</option>
-                    <option value="4">45 см</option>
+                    <option value="21 см" data-price="5">21 см</option>
+                    <option value="26 см" data-price="7">26 см</option>
+                    <option value="31 см" data-price="10">31 см</option>
+                    <option value="45 см" data-price="12">45 см</option>
                 </select>
             </div>
 
             <div class="form_group">
                 <label for="sauce">Выберите соус:</label>
                 <select name="sauce" id="sauce" disabled>
-                    <option value="1">сырный</option>
-                    <option value="2">кисло-сладкий</option>
-                    <option value="3">чесночный</option>
-                    <option value="4">барбекю</option>
+                    <option value="без соуса" data-price="0">без соуса</option>
+                    <option value="сырный" data-price="1">сырный</option>
+                    <option value="кисло-сладкий" data-price="2">кисло-сладкий</option>
+                    <option value="чесночный" data-price="3">чесночный</option>
+                    <option value="барбекю" data-price="4">барбекю</option>
                 </select>
             </div>
 
