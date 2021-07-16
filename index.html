@@ -4,14 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>TestTaskJS</title>
 </head>
 <body>
+<div class="container">
     <h1>Pizza</h1>
 
+        <form action="#" class="form">
 
+            <div class="form_img">
+                <img src="./img/pizza.jpg" alt="pizza">
+            </div>
 
+            <div class="form_group">
+                <label for="pizza">Выберите пиццу:</label>
+                <select name="pizza" id="pizza">
+                    <option value="1">Пепперони</option>
+                    <option value="2">Деревенская</option>
+                    <option value="3">Гавайская</option>
+                    <option value="4">Грибная</option>
+                </select>
+            </div>
+          
+            <div class="form_group">
+                <label for="size">Выберите размер:</label>
+                <select name="size" id="size" disabled>
+                    <option value="1">21 см</option>
+                    <option value="2">26 см</option>
+                    <option value="3">31 см</option>
+                    <option value="4">45 см</option>
+                </select>
+            </div>
+
+            <div class="form_group">
+                <label for="sauce">Выберите соус:</label>
+                <select name="sauce" id="sauce" disabled>
+                    <option value="1">сырный</option>
+                    <option value="2">кисло-сладкий</option>
+                    <option value="3">чесночный</option>
+                    <option value="4">барбекю</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Подтвердить заказ" disabled>
+
+        </form>
+
+        
+
+</div>
+    <script src="./script/jquery.js"></script>
+    <script src="./script/jquery-ui.min.js"></script>
     <script src="./script/main.js"></script>
 </body>
 </html>
