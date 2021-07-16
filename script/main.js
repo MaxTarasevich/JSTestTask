@@ -50,7 +50,6 @@ $(document).ready(function(){
         let size =  $( "#size" ).val()
         let sauce = $( "#sauce" ).val()
         let sum = $( "#price").text()
-        console.log(`${pizza} + ${size}+ ${sauce}`)
 
         $("#modal-pizza").text(pizza)
         $("#modal-size").text(size)
